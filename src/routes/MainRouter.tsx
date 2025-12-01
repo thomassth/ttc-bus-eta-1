@@ -25,17 +25,18 @@ const ttcPages = [
         path: ":lineId",
         children: [
           { index: true, Component: Line },
-          { path: ":stopNum", 
-           children: [
-             {
-               index: true,
-               Component: LineStopPrediction
-             },
-             {
-               path: ":vehicle",
-               Component: RelativeVehiclePosition,
-             },
-           ],
+          { 
+            path: ":stopNum", 
+            children: [
+              {
+                index: true,
+                Component: LineStopPrediction
+              },
+              {
+                path: ":vehicle",
+                Component: RelativeVehiclePosition,
+              },
+            ],
           },
         ],
       },
