@@ -20,7 +20,7 @@ export function TtcAlertList({
         return line <= 6
           ? text.match(`Line ${line}`)
           : text.startsWith(`${line}`);
-      }),
+      })
     ) ?? [];
   return (
     <>
