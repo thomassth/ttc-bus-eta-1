@@ -57,7 +57,7 @@ function CountdownToOpening(props: { datetime: string }) {
       intervalToDuration({
         start: Date.now(),
         end: endDateTime,
-      }),
+      })
     );
   }
 
@@ -106,7 +106,7 @@ function RouteInfo(props: { line: number }): JSX.Element {
               addStop({
                 id: Number.parseInt(stop.code),
                 stop,
-              }),
+              })
             );
           });
         });
@@ -148,7 +148,7 @@ function RouteInfo(props: { line: number }): JSX.Element {
         <div className="stop-prediction-page">
           <Title1 className={styles["subway-title"]}>
             {filterSubwayTitle(
-              data?.routeBranchesWithStops?.[0]?.routeBranch?.headsign,
+              data?.routeBranchesWithStops?.[0]?.routeBranch?.headsign
             )}
           </Title1>
           <ul>
